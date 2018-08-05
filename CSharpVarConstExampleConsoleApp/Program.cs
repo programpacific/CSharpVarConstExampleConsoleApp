@@ -8,8 +8,21 @@ namespace CSharpVarConstExampleConsoleApp
 {
     class Program
     {
+
         static void Main(string[] args)
         {
+            const string exampleOne = "const";
+            var shortDescriptionOfVar = "\"var\" variables";
+            Food MyFavorite = new Food("Stephen");
+
+            Console.WriteLine("Hi! my name is " + MyFavorite.Name + ". This is a short example of the use of various variable types.\n" +
+                "For example we'll be using, " + exampleOne + " and " + shortDescriptionOfVar + "!\n" +
+                "Lastly is an example of two constructors chained together!\n\n");
+            Console.WriteLine("My Favorite Food: {0}", MyFavorite.FavoriteFood);
+            Console.Write("My Favorite Desert: {0}\n\n", MyFavorite.FavoriteDesert);
+            Console.WriteLine("Thank you for demoing my application!\n" +
+                "Press enter to exit!");
+            Console.ReadLine();
         }
     }
 }
