@@ -5,6 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CSharpVarConstExampleConsoleApp
+
+   //    EXERCISE:
+  //1. Create a const variable
+ //2. Create a variable using the keyword "var".
+//3. Chain two constructors together.
+
+
 {
     class Program
     {
