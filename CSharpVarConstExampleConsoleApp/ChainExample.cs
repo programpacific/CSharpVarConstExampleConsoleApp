@@ -8,18 +8,36 @@ namespace CSharpVarConstExampleConsoleApp
 {
     public class Food
     {
-        public string Name { get; set; }
-        public string FavoriteFood { get; set; }
-        public string FavoriteDesert { get; set; }
+
+        public string Person;
+        public string MainCourse;
+        public string SideCourse;
 
 
-        // Condensed code by using optional paramenters!
-        public Food(string name, string food = "Steak", string desert = "Guinness")
-        {
-            Name = name;
-            FavoriteFood = food;
-            FavoriteDesert = desert;
+        public Food(string person, string mainCourse, string sideCourse)
+        { 
+        Person = person;
+        MainCourse = mainCourse;
+        SideCourse = sideCourse;
         }
+        public Food(string mainCourse) : this(mainCourse, "Tacos", "Fudge")
+        {
+
+        }
+        public Food(string person, string favFood) : this(person, favFood, "Cheesecake")
+        {
+
+        }
+
+        
+        // Condensed code by using optional paramenters!
+        //public Food(string name, string food = "Steak", string desert = "Guinness")
+        //{
+        //    Name = name;
+        //    FavoriteFood = food;
+        //    FavoriteDesert = desert;
+        //}
+
 
     }
 }
